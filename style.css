@@ -1,0 +1,140 @@
+.container,
+.container2 {
+    width: 75%;
+    background-color: rgb(222, 248, 250);
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(138, 235, 241);
+}
+
+img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+h1 {
+    word-spacing: 10px;
+    font-weight: normal;
+}
+
+.title,
+.author,
+.year {
+    padding: 10px 0 15px 10px;
+    border-right: 1px solid rgb(138, 235, 241);
+    border-left: 1px solid rgb(138, 235, 241);
+    border-bottom: 1px solid rgb(138, 235, 241);
+}
+
+.genre {
+    padding: 10px 0 15px 10px;
+    border-right: 1px solid rgb(138, 235, 241);
+    border-left: 1px solid rgb(138, 235, 241);
+    border-bottom: 1px solid rgb(138, 235, 241);
+}
+
+p {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.genre-value {
+    display: inline;
+}
+
+#titleBook, #author, #year {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+input[type='radio'] {
+    accent-color: rgb(255, 150, 88);
+}
+
+.btnAdd {
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 150, 88);
+    border: none;
+    width: 108px;
+    height: 20px;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.btnAdd:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.yourBooks {
+    border-bottom: 1px solid rgb(138, 235, 241);
+    height: 40px;
+    margin-top: 10px;
+}
+
+h3 {
+    margin-left: 30px;
+    margin-top: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-spacing: 10px;
+    font-weight: 600;
+}
+
+.container2 {
+    border: 1px solid rgb(138, 235, 241);
+    height: 200px;
+}
+
+.table {
+    border-top: 1px solid rgb(138, 235, 241);
+    background-color: bisque;
+}
+
+.list {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    text-align: left;
+}
+
+#bookList {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.point {
+    background-color: white;
+    width: 60%;
+}
+
+
+.btnGreen {
+    background-color: rgb(159, 224, 94);
+    border-radius: 10%;
+    margin-left: 40px;
+    width: 23px;
+    height: 20px;
+    padding: auto;
+}
+
+.btnRed {
+    background-color: rgb(255, 73, 73);
+    border-radius: 10%;
+    margin-left: 5px;
+    width: auto;
+    height: auto;
+}

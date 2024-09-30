@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Библиотека книг</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="img/icons8-книга-64.png" alt="книга">
+            <h1>МОЙ СПИСОК КНИГ</h1>
+        </div>
+        <div class="title">
+            <p>Название книги:</p>
+            <input type="text" id="titleBook">
+        </div>
+        <div class="author">
+            <p>Автор:</p>
+            <input type="text" id="author">
+        </div>
+        <div class="year">
+            <p>Год издания:</p>
+            <input type="text" id="year">
+        </div>
+        <div class="genre">
+            <p>Жанр:</p>
+            <div class="genre-value">
+                <label>Фантастика
+                    <input type="radio" name="answer">
+                </label>
+            </div>
+            <div class="genre-value">
+                <label>Поэзия
+                    <input type="radio" name="answer">
+                </label>
+            </div>
+            <div class="genre-value">
+                <label>Роман
+                    <input type="radio" name="answer">
+                </label>
+            </div>
+        </div>
+    </div>
+    <button onclick="addBook()" class="btnAdd" id="addBook">Добавить книгу</button>
+    <div class="container2">
+        <div class="yourBooks">
+            <h3>Ваши книги:</h3>
+        </div> 
+        <ol id="bookList">
+        
+        </ol>
+    </div>
+    <script src="scripts/scriptplus.js"></script>
+</body>
+
+</html>
