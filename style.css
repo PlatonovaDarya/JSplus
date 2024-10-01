@@ -54,7 +54,9 @@ label {
     display: inline;
 }
 
-#titleBook, #author, #year {
+#titleBook,
+#author,
+#year {
     margin-left: 20px;
     margin-bottom: 10px;
     width: 50%;
@@ -122,12 +124,12 @@ h3 {
 }
 
 
-.btnGreen {
-    background-color: rgb(159, 224, 94);
+.btnGrey {
+    background-color: rgb(199, 198, 198);
     border-radius: 10%;
     margin-left: 40px;
-    width: 23px;
-    height: 20px;
+    width: auto;
+    height: auto;
     padding: auto;
 }
 
@@ -137,4 +139,16 @@ h3 {
     margin-left: 5px;
     width: auto;
     height: auto;
+}
+
+.btnGreen {
+    background-color: rgb(77, 224, 48);
+    border-radius: 10%;
+    margin-left: 5px;
+    width: 30px;
+    height: auto;
+}
+
+.red {
+    background-color: rgb(255, 49, 49);
 }

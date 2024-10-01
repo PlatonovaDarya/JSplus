@@ -3,26 +3,27 @@ document.addEventListener('DOMContentLoaded', () => {
     loadBooks();
 });
 
-
 function addBook() {
     const input1 = document.getElementById('titleBook');
     const input2 = document.getElementById('author');
     const input3 = document.getElementById('year');
 
-    if (input1 === '', input2 === '', input3 === '') {
-        return;
+    if (input1.value.length === '', input2.value.length === '', input3.value.length === '') {
+        alert("Вы ничего не ввели!");
     }
 
     const bookList = document.getElementById('bookList');
+    
     const li = document.createElement('li');
     li.insertAdjacentHTML('beforeend',
-        `<li class="point">
-            <span class="btn">${input1.value} ${input2.value} ${input3.value}
-                <button onclick="editBook(this)" class="btnGreen" id="through" data-type="readIt">&check;</button>
-                <button onclick="deleteBook(this)" class="btnRed" data-type="delete">&times;</button>
-            </span>
-        </li>`
+        `
+            <span class="btn">${input1.value} ${input2.value} ${input3.value}</span>
+                <button onclick="editBook(this)" class="btnGrey" id="through" data-type="readIt">&#128270;</button>
+                <button onclick="deleteBook(this)" class="btnRed" data-type="delete">&#10060;</button>
+                <button onclick="doneBook(this)" class="btnGreen" data-type="done">&#10004;</button>
+            `
     );
+
     bookList.appendChild(li);
     saveBooks();
     input1.value = '', input2.value = '', input3.value = '';
@@ -58,13 +59,23 @@ function loadBooks() {
     books.forEach(book => {
         const li = document.createElement('li');
         li.insertAdjacentHTML('beforeend',
-            `<li class="point">
-                <span class="btn">${book}
-                    <button onclick="editBook(this)" class="btnGreen" data-type="readIt">&check;</button>
-                    <button onclick="deleteBook(this)" class="btnRed" data-type="delete">&times;</button>
-                </span>
-            </li>`);
+            `
+                <span class="btn">${book}</span>
+                    <button onclick="editBook(this)" class="btnGrey" data-type="readIt">&#128270;</button>
+                    <button onclick="deleteBook(this)" class="btnRed" data-type="delete">&#10060;</button>
+                    <button onclick="doneBook(this)" class="btnGreen" data-type="done">&#10004;</button>
+            `);
         bookList.appendChild(li);
     });
 }
 
+function doneBook(button) {
+    const li = button.parentElement;
+    li.style.setProperty("text-decoration", "line-through");
+    saveBooks();
+}
+
+function delAllBooks(button) {
+    const deleteElement = document.querySelector("#bookList");
+    deleteElement.innerHTML = '';
+}
