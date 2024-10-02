@@ -3,7 +3,7 @@
     width: 75%;
     background-color: rgb(222, 248, 250);
     margin: auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header {
@@ -62,7 +62,7 @@ label {
     width: 50%;
 }
 
-input[type='radio'] {
+input[type="radio"] {
     accent-color: rgb(255, 150, 88);
 }
 
@@ -79,6 +79,12 @@ input[type='radio'] {
     border-radius: 20px;
 }
 
+.blue {
+    height: auto;
+    background-color: blue;
+    color: white;
+}
+
 .btnAdd:hover {
     opacity: 0.9;
     cursor: pointer;
@@ -93,7 +99,7 @@ input[type='radio'] {
 h3 {
     margin-left: 30px;
     margin-top: 5px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     word-spacing: 10px;
     font-weight: 600;
 }
@@ -109,20 +115,19 @@ h3 {
 }
 
 .list {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     text-align: left;
 }
 
 #bookList {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .point {
     background-color: white;
     width: 60%;
 }
-
 
 .btnGrey {
     background-color: rgb(199, 198, 198);
@@ -151,4 +156,10 @@ h3 {
 
 .red {
     background-color: rgb(255, 49, 49);
+}
+
+#filterBook {
+    border: 1px solid rgb(255, 150, 88);
+    margin-left: 45px;
+    width: 200px;
 }
